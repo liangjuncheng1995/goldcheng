@@ -1,0 +1,3 @@
+<!--components/navbar/navbar.wxml-->
+<view wx:if="{{isShow}}">测试</view>
+ 
