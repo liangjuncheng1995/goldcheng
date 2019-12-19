@@ -1,4 +1,5 @@
 /* components/navi/navi.wxss */
+
 .container {
   width: 600rpx;
   height: 80rpx;
@@ -7,12 +8,21 @@
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
+
 .icon {
   height: 80rpx;
   width: 80rpx;
 }
- title {
-   font-size: 28rpx;
- }
+
+.title {
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}

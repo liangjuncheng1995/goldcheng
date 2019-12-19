@@ -1,49 +1,63 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:330rpx;
-  background-color: #ffffff;
+  width: 330rpx;
+  background-color: #fff;
 }
 
-.head{
+.head {
   display: flex;
-  width:100%;
+  width: 100%;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
-  height:80rpx;
+  height: 80rpx;
 }
 
-.tag{
-  margin-left:20rpx;
-  margin-top:-2rpx;
-  height:40rpx;  
-  width:72rpx ;
-  font-size:24rpx;
-  background-color:#f7f7f7 !important;
+.tag {
+  margin-left: 20rpx;
+  margin-top: -2rpx;
+  height: 40rpx;
+  width: 72rpx;
+  font-size: 24rpx;
+  background-color: #f7f7f7 !important;
 }
 
-.like{
-  margin-top:4rpx;
-  margin-right:4rpx;
+.like {
+  margin-top: 4rpx;
+  margin-right: 4rpx;
 }
 
-.other-img{
-  width:100%;
-  height:240rpx;
+.other-img {
+  width: 100%;
+  height: 240rpx;
 }
 
-.music-img{
+.music-img {
   border-radius: 50%;
-  width:240rpx;
-  height:240rpx;
+  width: 240rpx;
+  height: 240rpx;
 }
 
-.text{
-  padding:30rpx;
-  font-size:28rpx;
-  height:130rpx;
-  color:#666666;
+.text {
+  margin: 30rpx 0;
+  padding: 0 30rpx;
+  font-size: 12px;
+  height: 75px;
+  line-height: 35rpx;
+  color: #666;
   overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+@media only screen and (max-width: 375px) {
+  .text {
+    height: 70px;
+  }
 }

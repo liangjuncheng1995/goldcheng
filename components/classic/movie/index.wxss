@@ -1,1 +1,11 @@
 @import "../common.wxss";
+
+.content {
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}

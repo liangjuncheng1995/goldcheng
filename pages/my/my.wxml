@@ -11,7 +11,7 @@
   <view class='about-container'>
     <view class='about-us'>
       <image src='/images/my/about.png'></image>
-      <text class='description' bind:tap='onJumpToAbout'>关于我们</text>
+      <text class='description' bind:tap='onJumpToAbout'>关注UP主</text>
     </view>
     <view class='about-us'>
       <text class='book-num'>{{bookCount}}</text>
@@ -33,4 +33,4 @@
 
   <!-- <button open-type='getUserInfo' bindgetuserinfo='getUserInfo'>授权</button> -->
 </view>
-<image bind:tap="onStudy" class="study" src="/images/my/study.png"></image>
+<!-- <image bind:tap="onStudy" class="study" src="/images/my/study.png"></image> -->

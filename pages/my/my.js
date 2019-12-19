@@ -60,6 +60,7 @@ Page({
     //   console.log(this.data.classics)
     // })
     classicModel.getMyFavor().then(res => {
+      console.log(res)
       this.setData({
         classics: res
       })
