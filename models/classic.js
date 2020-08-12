@@ -16,20 +16,29 @@ class ClassicModel extends HTTP {
   getClassic(index,nextOrPrevious,sCallback) {
     //从缓存中拿数据
     let key = nextOrPrevious=='next' ?  this._getKey(index+1) : this._getKey(index-1)
-    let classic = wx.getStorageSync(key)
-    if(!classic) {
-      return this.request({
-        // url: '/classic/' + index + '/' + nextOrPrevious,
-        url: `/classic/${index}/${nextOrPrevious}`,
-        // success: (res) => {
-        //   wx.setStorageSync(this._getKey(res.index), res)
-        //   sCallback(res)
-        // }
-      })
-    } else {
-      classic.storage = true
-      return this._promise(classic)
-    }
+    // let classic = wx.getStorageSync(key)
+    // if(!classic) {
+    //   return this.request({
+    //     // url: '/classic/' + index + '/' + nextOrPrevious,
+    //     url: `/classic/${index}/${nextOrPrevious}`,
+    //     // success: (res) => {
+    //     //   wx.setStorageSync(this._getKey(res.index), res)
+    //     //   sCallback(res)
+    //     // }
+    //   })
+    // } else {
+    //   classic.storage = true
+    //   return this._promise(classic)
+    // }
+    // classic.storage = true
+    return this.request({
+      // url: '/classic/' + index + '/' + nextOrPrevious,
+      url: `/classic/${index}/${nextOrPrevious}`,
+      // success: (res) => {
+      //   wx.setStorageSync(this._getKey(res.index), res)
+      //   sCallback(res)
+      // }
+    })
   }
   _promise(res) {
     return new Promise((resolve,reject) => {

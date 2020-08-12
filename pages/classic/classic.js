@@ -69,10 +69,10 @@ Page({
   _undateClassic(nextOrPrevious) {
     let index = this.data.classic.index
     classicModel.getClassic(index, nextOrPrevious).then((res)  => {
-      if (!res.storage) {
-        // 写入缓存
-        wx.setStorageSync(classicModel._getKey(res.index), res)
-      }
+      // if (!res.storage) {
+      //   // 写入缓存
+      //   wx.setStorageSync(classicModel._getKey(res.index), res)
+      // }
       this._getLikeStatus(res.id, res.type)
       this.setData({
         classic: res,
